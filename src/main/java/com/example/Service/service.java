@@ -1,7 +1,7 @@
 package com.example.Service;
 
 import java.io.*;
-import java.util.*;
+// import java.util.*;
 import org.json.JSONObject;
 import java.net.*;
 
@@ -15,9 +15,9 @@ public class service {
         URL urlForGetRequest = new URL(url);
         String readLine = null;
         HttpURLConnection conection = (HttpURLConnection) urlForGetRequest.openConnection();
-        conection.setRequestMethod("GET");
+        conection.setRequestMethod("OK");
         int responseCode = conection.getResponseCode();
-        Map<String, String> map = new HashMap<>();
+        // Map<String, String> map = new HashMap<>();
 
         if (responseCode == HttpURLConnection.HTTP_OK) {
             BufferedReader in = new BufferedReader(
