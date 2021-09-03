@@ -16,22 +16,22 @@ import java.io.IOException;
 public class HomePage {
 
     public HomePage() {
-        JFrame frame = new JFrame("Instagram Details");
+        JFrame frame = new JFrame("Instagram Dashboard");
         JTextField textField = new JTextField();
 
-        textField.setText("shabistic");
+        textField.setText("hrithik_");
         textField.setBounds(150, 50, 380, 40);
         textField.setFont(new Font("Aerial", Font.PLAIN, 20));
         textField.setBackground(Color.white);
         textField.setForeground(Color.black);
         textField.setLayout(null);
 
-        JButton button = new JButton("OK");
+        JButton button = new JButton("search");
         button.setFocusable(false);
         button.setBounds(570, 50, 80, 40);
-        button.setBackground(Color.green);
-        button.setForeground(Color.black);
-        button.setFont(new Font("Callibri", Font.BOLD + Font.ITALIC, 20));
+        button.setBackground(Color.white);
+        button.setForeground(Color.blue);
+        button.setFont(new Font("Callibri", Font.BOLD + Font.ITALIC, 12));
         button.setLayout(null);
         button.addActionListener(e -> {
             String username = textField.getText().trim();
@@ -41,6 +41,7 @@ public class HomePage {
                 System.out.println(obj);
                 frame.add(new ShowImage(obj));
                 frame.add(new FullName(obj));
+                System.out.println(obj);
                 frame.add(new Posts(obj));
                 frame.add(new Followers(obj));
                 frame.add(new Following(obj));
@@ -51,7 +52,7 @@ public class HomePage {
         });
 
         frame.setSize(800, 800);
-        frame.getContentPane().setBackground((Color.white));
+        frame.getContentPane().setBackground((Color.pink));
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(3);
         frame.setResizable(false);

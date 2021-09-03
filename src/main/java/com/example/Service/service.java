@@ -15,7 +15,7 @@ public class service {
         URL urlForGetRequest = new URL(url);
         String readLine = null;
         HttpURLConnection conection = (HttpURLConnection) urlForGetRequest.openConnection();
-        conection.setRequestMethod("OK");
+        conection.setRequestMethod("GET");
         int responseCode = conection.getResponseCode();
         // Map<String, String> map = new HashMap<>();
 
